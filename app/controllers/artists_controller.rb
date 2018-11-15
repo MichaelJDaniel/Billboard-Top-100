@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
   before_action :set_board , except: [:index, :new, :create]
   def index
-  @artist = Artist.new
+  @artists = Artist.new
   end
 
   def show
@@ -30,6 +30,7 @@ class ArtistsController < ApplicationController
       redirect_to artists_path
     else
       render :edit
+    end
   end
 
 
@@ -42,3 +43,5 @@ class ArtistsController < ApplicationController
 
   def board_params
     params.require(:artist).permit(:name)
+  end
+end
