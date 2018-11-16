@@ -15,6 +15,11 @@ class BoardsController < ApplicationController
     # render :edit
   end
 
+  def destroy
+    @board.destroy
+    redirect_to boards_path
+  end
+
   def create
     @board = Board.new(board_params)
     if @board.save
