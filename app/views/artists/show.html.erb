@@ -1,1 +1,21 @@
+<h1>Top Songs: <%= @artist.name %></h1>
+   <% @counter = 1 %>
+    
+
+
+  <table class="ui celled table">
+  <thead>
+    <tr><th>Position</th>
+    <th>Song</th>
+  </tr></thead>
+  <tbody>
+    <% @songs.each do |song| %>
+    <tr>
+      <td><%= @counter %></td>
+      <td><%= song.name %></td>
+      <% @counter += 1 %>
+    </tr>
+    <% end %>
+    </tbody>
+</table>
 

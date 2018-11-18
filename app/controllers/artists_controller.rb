@@ -1,10 +1,12 @@
 class ArtistsController < ApplicationController
-  before_action :set_board , except: [:index, :new, :create]
+  before_action :set_artist , except: [:index, :new, :create]
   def index
   @artists = Artist.new
   end
 
   def show
+    @songs = @artist.songs.all
+    @board = Board.find(params[:board_id])
   end
 
   def new

@@ -1,1 +1,20 @@
-<h1><%= @board.name %></h1>
+<h1>Top 100 <%= @board.name %></h1>
+   <% @counter = 1 %>
+    
+
+
+  <table class="ui celled table">
+  <thead>
+    <tr><th>Position</th>
+    <th>Artist</th>
+  </tr></thead>
+  <tbody>
+    <% @artists.each do |artist| %>
+    <tr>
+      <td><%= @counter %></td>
+      <td><%= link_to artist.name, board_artist_path(@board, artist) %></td>
+      <% @counter += 1 %>
+    </tr>
+    <% end %>
+    </tbody>
+</table>
