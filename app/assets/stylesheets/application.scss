@@ -1,70 +1,73 @@
 @import "semantic-ui";
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
 
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.site_wrapper {
-  background-color: black;
-  height: 100%;
-  min-height: calc(100vh-61px);
+body {
+  font-family: "Allerta Stencil", sans-serif;
 
-}
+  .site_wrapper {
+    background-color: black;
+    height: 100%;
+    min-height: calc(100vh-61px);
+  }
 
-.login {
-      flex-direction: column;
-      display: flex;  
-      margin-top: 0;
-      height: auto;
-      align-items: center;
-      color: yellowgreen;
-}
-
-
-.charts {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 61px);
-
-  .boards {
+  .login {
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
+    margin-top: 0;
+    height: auto;
+    align-items: center;
+    color: yellowgreen;
+  }
+
+  .charts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 61px);
 
-    .board {
-      padding: 50px;
-      color: greenyellow;
-      font-size: 30px;
-      font-family: 'Allerta Stencil', sans-serif;
+    .boards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .board {
+        padding: 50px;
+        color: greenyellow;
+        font-size: 30px;
+      }
+    }
+    h1.header {
+      width: 100%;
+      color: yellowgreen;
+      font-family: "Allerta Stencil", sans-serif;
+
+
+    }
+
+    h1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: "Allerta Stencil", sans-serif;
+
     }
   }
 }
 
-  .ui.header {
-  width: 100%;
-  font-family: 'Allerta Stencil', sans-serif;
-  color: yellowgreen;
-}
-
-  h1 {
-    width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Allerta Stencil', sans-serif;
-  }
-
 .navigation {
-    width: 100%;
-    
+  width: 100%;
+
   ul {
     width: 100%;
     display: flex;
@@ -74,17 +77,20 @@
     list-style: none;
     background-color: yellowgreen;
     transition: 0.3s linear;
-    font-family: 'Allerta Stencil', sans-serif;
 
     .welcome {
       flex-direction: column;
-      display: flex;  
+      display: flex;
       justify-content: center;
       margin-right: auto;
       height: 61px;
       padding-left: 20px;
       color: white;
       font-size: 20px;
+    }
+
+    .na {
+      font-family: "Allerta Stencil", sans-serif;
     }
 
     a {
@@ -94,15 +100,13 @@
       font-size: 16px;
       padding: 20px;
       border-bottom: 2px solid transparent;
-    
+      font-family: "Allerta Stencil", sans-serif;
+
       &:hover {
         background-color: lightgrey;
-        color: black;
+        color: yellowgreen;
         border-bottom-color: dimgrey;
-
-      }   
-    }      
+      }
+    }
   }
 }
-
-
