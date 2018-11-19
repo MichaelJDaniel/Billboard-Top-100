@@ -1,4 +1,5 @@
 @import "semantic-ui";
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
 
   * {
       margin: 0;
@@ -6,38 +7,50 @@
       box-sizing: border-box;
 }
 
+.site_wrapper {
+  background-color: black;
+  height: 100%;
+  min-height: calc(100vh-61px);
+
+}
+
 .login {
-  flex-direction: column;
+      flex-direction: column;
       display: flex;  
-      margin-top: 55px;
+      margin-top: 0;
       height: auto;
       align-items: center;
-      
+      color: yellowgreen;
 }
 
 
 .charts {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 61px);
 
-  .content {
-    width: 100%;
-    margin: 0 20px;
+  .boards {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    font-family: 'Pacifico', cursive;
-    
-    // targeting chart links within content
-    a {
-      color: greenyellow;
+    align-items: center;
 
+    .board {
+      padding: 50px;
+      color: greenyellow;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
     }
   }
 }
 
-  .ui_header {
+  .ui.header {
   width: 100%;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: yellowgreen;
 }
 
   h1 {
@@ -46,7 +59,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Allerta Stencil', sans-serif;
   }
 
 .navigation {
@@ -61,7 +74,7 @@
     list-style: none;
     background-color: yellowgreen;
     transition: 0.3s linear;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Allerta Stencil', sans-serif;
 
     .welcome {
       flex-direction: column;

@@ -21,7 +21,9 @@
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       <% end %> 
     </ul>
-  </div>  
+  </div>
+  <div class="site_wrapper">
     <%= yield %>
+  </div>
   </body>
 </html>
