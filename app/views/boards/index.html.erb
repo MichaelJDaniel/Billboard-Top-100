@@ -1,11 +1,13 @@
-<h1 class="ui header">Boards</h1>
-<%= link_to "New Board", new_board_path %>
+<h1 class="ui header">Top Music Charts</h1>
 <div class="ui divider"></div>
 
-<div class="ui grid">
-<% @boards.each do |board| %>
+<div class="ui grid charts">
+  <% @boards.each do |board| %>
   <div class="sixteen wide mobile eight tablet four wide computer column">
   <div class="content">
           <%= link_to board.name, board_path(board) %>
-        </div>
   <% end %>        
+    </div>
+  </div>  
+</div>
+  

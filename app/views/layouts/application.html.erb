@@ -12,8 +12,14 @@
   <body>
   <div class="navigation">
     <ul>
-      <%= link_to boards_path, :index => 'go' do %><li>Boards</li><% end %>
-      <%= link_to artists_path, :index => 'go' do %><li>Artists</li><% end %>
+      <% if user_signed_in? %>
+      <li class= "welcome"><%= "Welcome #{current_user.email}" %></li>
+      <% end %>
+      <%= link_to boards_path, :index => 'go' do %><li>Charts</li><% end %>
+      <%= link_to new_board_path, :new => 'go' do %><li> New Chart</li><% end %>
+      <% if user_signed_in? %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      <% end %> 
     </ul>
   </div>  
     <%= yield %>
